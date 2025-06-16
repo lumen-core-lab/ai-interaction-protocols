@@ -144,24 +144,6 @@ Dominik programmiert nicht. Er macht etwas Mächtigeres: **Er stellt die richtig
 ├── APEX-Protocol.md        # Geschäftsfokussierte ethische KI
 ├── LUMEN-Protocol.md       # Empathie-Logik-Balance
 ├── FUSION-Protocol.md      # Adaptive situative Intelligenz
-│
-├── Implementation/
-│   ├── Schnellstart-Anleitungen/
-│   ├── Code-Beispiele/
-│   ├── Integrations-Vorlagen/
-│   └── Test-Frameworks/
-│
-├── Research/
-│   ├── Fallstudien/
-│   ├── Empirische-Validierung/
-│   ├── Vergleichsanalysen/
-│   └── Wissenschaftliche-Arbeiten/
-│
-└── Community/
-    ├── Diskussionen/
-    ├── Anwendungsfälle/
-    ├── Erfolgsgeschichten/
-    └── FAQ/
 ```
 
 -----
