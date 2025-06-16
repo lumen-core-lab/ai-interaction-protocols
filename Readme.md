@@ -400,5 +400,5 @@ GitHub Repository: https://github.com/[username]/ai-interaction-protocols
 
 -----
 
-*Zuletzt aktualisiert: [Aktuelles Datum]* 
+*Zuletzt aktualisiert: 16.06.2025* 
 *Lizenz: [CC BY-NC-SA 4.0](LICENSE.md) • [Disclaimer](DISCLAIMER.md) • [Contributing](CONTRIBUTING.md)*
