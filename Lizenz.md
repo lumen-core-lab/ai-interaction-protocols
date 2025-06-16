@@ -245,5 +245,5 @@ APEX, LUMEN, and FUSION. Available at: [GitHub URL]"
 
 **Diese Lizenz ist rechtsverbindlich. Durch Download, Verwendung oder Implementierung akzeptieren Sie alle Bedingungen vollständig.**
 
-**Version 1.0 - [Datum]** 
+**Version 1.0 - 16.06.2025** 
 **© 2025 Dominik Knape - Alle Rechte vorbehalten**
