@@ -140,7 +140,7 @@ Keine individuelle Beratung oder Support.
 1. Verzicht auf jegliche Haftungsansprüche
 1. Eigenverantwortung für alle Konsequenzen
 
-**Datum der letzten Aktualisierung:** [Aktuelles Datum bei Veröffentlichung]
+**Datum der letzten Aktualisierung:** 16.06.2025
 
 -----
 
