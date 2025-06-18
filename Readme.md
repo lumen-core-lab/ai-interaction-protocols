@@ -177,5 +177,5 @@ GitHub Repository: https://github.com/lumen-core-lab/ai-interaction-protocols
 ---
 
 *Zuletzt aktualisiert: 2025-06-18*
-*Lizenz: [MIT License](LICENSE.md) • [Disclaimer](DISCLAIMER.md) • [Contributing](CONTRIBUTING.md)*
+*Lizenz: [MIT License](LICENSE.md) • [Disclaimer](DISCLAIMER.md) 
 
