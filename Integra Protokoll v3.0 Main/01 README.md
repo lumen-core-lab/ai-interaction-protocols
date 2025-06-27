@@ -56,7 +56,8 @@ INTEGRA nutzt vordefinierte Muster zur ethischen Wiedererkennung, u. a.:
 
 ## 🧪 Demo / Validator
 
-> Siehe `https://lumen-core-lab.github.io/ai-interaction-protocols/Integra%20Validator%20UI.html` für eine Live-Testoberfläche.  
+>* **INTEGRA Protokoll Validator v3.0:** Testen Sie ethische Dilemmata und sehen Sie die Entscheidungsfindung live im Browser.
+    **[➡️ Jetzt ausprobieren!](https://lumen-core-lab.github.io/ai-interaction-protocols/Integra%20Validator%20UI.html)**
 > Simuliere Eingaben, prüfe Reaktionen und exportiere Ethik-Reports.
 
 ---
