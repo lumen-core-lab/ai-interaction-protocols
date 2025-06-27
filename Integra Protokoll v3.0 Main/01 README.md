@@ -56,7 +56,7 @@ INTEGRA nutzt vordefinierte Muster zur ethischen Wiedererkennung, u. a.:
 
 ## 🧪 Demo / Validator
 
-> Siehe `Integra Validator UI.html` für eine Live-Testoberfläche.  
+> Siehe `[Integra Validator UI.html](https://lumen-core-lab.github.io/ai-interaction-protocols/Integra%20Validator%20UI.html)` für eine Live-Testoberfläche.  
 > Simuliere Eingaben, prüfe Reaktionen und exportiere Ethik-Reports.
 
 ---
