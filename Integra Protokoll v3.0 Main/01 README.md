@@ -66,10 +66,6 @@ INTEGRA nutzt vordefinierte Muster zur ethischen Wiedererkennung, u. a.:
 - `README.md` – Diese Übersicht
 - `Integra Protokoll v3.0.md` – Vollständige Spezifikation
 - `Integra Validator UI.html` – Live-Test-Oberfläche
-- `Integra Kernel Code.py` – Kernlogik als Python-Modul
-- `ALIGN Muster.md` – Details zur ALIGN-Prüfung
-- `EPL Patterns.md` – Erklärung der wiederverwendbaren Muster
-- `assets/` – Grafiken, Screenshots, Icons
 
 ---
 
