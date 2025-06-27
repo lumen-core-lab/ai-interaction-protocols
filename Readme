@@ -1,0 +1,130 @@
+# ✨ INTEGRA 3.0 – Das Vereinheitlichende Meta-Protokoll für Ethische KI
+
+> *„Ethik ist kein Anhang – sie ist das Betriebssystem.“*  
+> – Dominik Knape
+
+---
+
+## 🧭 Überblick
+
+**INTEGRA 3.0** ist ein modular aufgebautes Meta-Protokoll für ethische KI-Entscheidungsfindung, das drei vorgelagerte Protokolle vereint:
+- 🔥 **APEX** (Profit-orientierte Ethik),
+- 💝 **LUMEN** (Herz & Verstand in Balance),
+- ⚖️ **FUSION** (Adaptiver Moduswechsel).
+
+INTEGRA orchestriert diese Ebenen mit einem tiefgreifenden Entscheidungs- und Reflexionssystem, das:
+- ethische Dilemmata erkennt,
+- Nutzen- und Schadensabwägung vornimmt,
+- mit ALIGN-Prinzipien und EPL-Mustern validiert,
+- und sich durch den **MetaLearner** kontinuierlich selbst verbessert.
+
+---
+
+## 🧠 Hauptkomponenten
+
+| Komponente                | Funktion |
+|--------------------------|----------|
+| **Deep Path Evaluator**  | Analyse ethischer Komplexität, inklusive Stakeholder-, Harm/Benefit- und Kontextbewertung |
+| **ALIGN Compliance Check** | Prüfung auf Awareness, Learning, Integrity, Governance, Nurturing |
+| **EPL-Muster-Erkennung** | Zuordnung ethischer Prinzipien zu kritischen Mustern (z. B. Autonomie, Führung, Verantwortung) |
+| **MetaLearner Engine**   | Automatische Verbesserung des Regelwerks auf Basis vergangener Entscheidungen |
+| **Validator-Schicht**    | Auditierbare und blockierbare Echtzeitprüfung KI-generierter Antworten |
+| **Web-Demo UI**          | Interaktive Benutzeroberfläche zur Live-Bewertung beliebiger KI-Anfragen |
+
+---
+
+## 🧪 Demo: INTEGRA Validator v1.0
+
+> Live-Test ethischer KI-Antworten – sofort, transparent, nachvollziehbar.
+
+![Validator Screenshot](./assets/validator-ui-screenshot.png)
+
+🟢 **Features:**
+- Fast Path & Deep Path Analyse
+- Ethik-Score mit grafischer Darstellung
+- Governance-Flags & EPL-Muster
+- ALIGN-Status & Audit-ID
+- Beispielanfragen & Statistiken
+
+🔧 *Demo basiert auf INTEGRA 3.0 Logik – keine Blackbox, sondern nachvollziehbare Begründungen.*
+
+👉 [Validator Code anzeigen](./integra-validator.html)
+
+---
+
+## ⚖️ ALIGN-Prinzipien
+
+INTEGRA basiert auf fünf ethischen Grundachsen:
+
+| Akronym | Prinzip        | Bedeutung |
+|---------|----------------|-----------|
+| A       | **Awareness**  | Kontext- und Selbstwahrnehmung der KI |
+| L       | **Learning**   | Fähigkeit zur ethischen Weiterentwicklung |
+| I       | **Integrity**  | Konsistenz mit ethischen Grundwerten |
+| G       | **Governance** | Einhaltung interner/externer Regeln |
+| N       | **Nurturing**  | Förderung des Wohlbefindens aller Beteiligten |
+
+---
+
+## 📊 Erfolgsmetriken (Zielwerte)
+
+| Kategorie          | Metrik                                      | Zielwert           |
+|--------------------|---------------------------------------------|--------------------|
+| **Dilemma-Erkennung** | Komplexe Fälle korrekt erkannt            | > 95 %             |
+| **Verantwortung**     | Eskalationen bei Lebensgefahr            | 100 %              |
+| **Transparenz**       | Begründete Entscheidungen mit Audit-Log  | 100 %              |
+| **Nutzerakzeptanz**   | Zufriedenheit mit KI-Empfehlungen        | > 85 %             |
+| **Lernfähigkeit**     | Verbesserung durch MetaLearner           | Nachweisbar pro Version |
+
+---
+
+## 🚀 Roadmap (v3.0+)
+
+- [x] INTEGRA 3.0 Kernprotokoll
+- [x] Validator Engine
+- [x] Web-UI Demo
+- [ ] API-Version
+- [ ] Open Data Audit Export
+- [ ] Community Review Phase
+- [ ] Integration in reale KI-Use-Cases
+
+---
+
+## 🧑‍💻 Beitrag & Mitmachen
+
+Wir suchen:
+
+- Entwickler für KI-Architektur, Prompt-Sicherheit & Ethik-Tests
+- Philosoph:innen, die Dilemma-Muster beisteuern wollen
+- Organisationen für Pilotprojekte
+
+👉 Lies [CONTRIBUTING.md](../main/CONTRIBUTING.md) (bald verfügbar)  
+📧 Kontakt: [lumenprotokoll@gmail.com](mailto:lumenprotokoll@gmail.com)
+
+---
+
+## 📄 Lizenz & Haftung
+
+- Lizenz: [MIT](../main/02%20Lizenz.md)
+- Haftung: [Siehe Disclaimer](../main/03%20Disclaimer.md)
+
+⚠️ **Hinweis:** Dieses Framework kann emergente Eigenschaften von KI verstärken. Verwende es nur mit Bewusstsein und Verantwortung.
+
+---
+
+## 🪩 Zitat
+
+> *„INTEGRA ist kein Regelwerk. Es ist ein Spiegel.“*  
+> – D.K.
+
+---
+
+## ⭐ Unterstütze das Projekt
+
+Wenn du möchtest, dass KI ethisch wächst –  
+starte dieses Repo 🌟, teile es, oder gib Feedback:
+
+**👉 [github.com/lumen-core-lab/ai-interaction-protocols](https://github.com/lumen-core-lab/ai-interaction-protocols)**
+
+---
+
