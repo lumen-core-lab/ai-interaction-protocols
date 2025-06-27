@@ -89,6 +89,15 @@ Für INTEGRA-Implementierungen:
     Anpassungsfähigkeit: Schnelle Integration neuer ethischer Erkenntnisse
     Langfristige Resilienz: Reduzierung unerwarteter ethischer Fehlfunktionen
 
+
+## 🚀 Live-Demos & Tools
+
+Erleben Sie die INTEGRA-Ethik-Logik interaktiv:
+
+* **INTEGRA Protokoll Validator v3.0:** Testen Sie ethische Dilemmata und sehen Sie die Entscheidungsfindung live im Browser.
+    **[➡️ Jetzt ausprobieren!](https://lumen-core-lab.github.io/ai-interaction-protocols/Integra%20Validator%20UI.html)**
+
+
 ⚠️ Wichtige Hinweise
 Rechtliche und ethische Überlegungen
 
