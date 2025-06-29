@@ -1,0 +1,61 @@
+# INTEGRA Protokoll Version 4.1 – Ein neues Zeitalter der KI-Ethik
+
+Willkommen zum Herzen der ethischen KI-Entscheidungsfindung! Das **INTEGRA Protokoll v4.1** repräsentiert den neuesten Stand in der Entwicklung eines Meta-Frameworks für ganzheitliche, lernfähige und sich selbst optimierende ethische KI-Systeme.
+
+Diese Version baut auf den bewährten **CORE_PRINCIPLES (ALIGN)** auf und führt bahnbrechende Innovationen ein, um KI nicht nur ethisch zu leiten, sondern ihr auch die Fähigkeit zur **architektonischen Selbstoptimierung** und zur **externen, unabhängigen Validierung** zu verleihen.
+
+---
+
+## 🚀 Was ist NEU in INTEGRA v4.1?
+
+Version 4.1 ist ein fundamentaler Sprung nach vorne mit zwei entscheidenden Säulen:
+
+### 🧠 Meta² – Architectural Self-Optimizer (ASO)
+
+INTEGRA v4.1 kann jetzt seine internen Entscheidungsprozesse und Modulketten dynamisch anpassen und optimieren. Der ASO ist ein *"Meta-Meta-Lerner"*, der aus der Effizienz und Qualität jeder Entscheidung lernt, um den optimalen Pfad zu einer ethisch fundierten und effizienten Lösung zu finden. Dies ermöglicht eine bisher unerreichte Agilität und Anpassungsfähigkeit.
+
+- **Kernfunktion:** Optimiert die Ausführung des Deep Path durch adaptive Modulsequenzierung, Schwellenwertanpassung und prozessuale Selbstreflexion.  
+- **Ziel:** Ethische Integrität bei maximaler Effizienz und Robustheit.
+
+### 🔒 EVA – Ethical Validation & Audit Layer
+
+Als externe und unabhängige Schicht bietet EVA eine zusätzliche Ebene der Sicherheit und Nachvollziehbarkeit. Es validiert jede von INTEGRA getroffene Entscheidung *vor* deren Ausführung, prüft auf ALIGN-Konformität, erkennt Abweichungen und löst bei Bedarf Eskalationen an menschliche Aufsicht aus. EVA ist Ihre Garantie für Transparenz und Verantwortlichkeit in kritischen Anwendungen.
+
+- **Zweck:** Unabhängige Verifikation, Nachvollziehbarkeit und Eskalationsfähigkeit.  
+- **Vorteil:** Erhöht das Vertrauen in KI-Entscheidungen, insbesondere in regulierten oder sicherheitskritischen Umgebungen.
+
+---
+
+## 🎯 Kernziele von INTEGRA v4.1
+
+- **Adaptive Ethik:** KI-Systeme, die sich dynamisch an komplexe, sich ständig ändernde ethische Landschaften anpassen können.
+- **Architektonische Intelligenz:** Selbstoptimierung der internen Arbeitsweise für höchste Effizienz und Zuverlässigkeit.
+- **Maximale Verantwortlichkeit:** Durch den EVA-Layer wird jede Entscheidung auditierbar und bei ethischen Zweifeln eine menschliche Überprüfung erzwungen.
+- **Vertrauensbildung:** Ein Framework, das nicht nur ethische Entscheidungen trifft, sondern diese auch transparent und überprüfbar macht.
+
+---
+
+## 📖 Entdecken Sie die Details
+
+Tauchen Sie tiefer in die Architektur und Funktionsweise des INTEGRA Protokoll v4.1 ein:
+
+- **Technische Spezifikation INTEGRA Protokoll v4.1:**  
+  [02 Integra Protokoll v4.1.md](02%20Integra%20Protokoll%20v4.1.md)  
+  *Hier finden Sie alle technischen Details zu den Modulen, der Entscheidungslogik und den Verbesserungen von v4.1, inklusive des ASO.*
+
+- **Technische Spezifikation EVA – Ethical Validation & Audit Layer:**  
+  [03 EVA - Ethical Validation & Audit Layer.md](03%20EVA%20-%20Ethical%20Validation%20&%20Audit%20Layer.md)  
+  *Eine detaillierte Beschreibung des unabhängigen Validierungs- und Audit-Moduls, seiner Komponenten und seines Flows.*
+
+---
+
+## 🔗 Live-Demo (Basierend auf v3.0)
+
+Erleben Sie bereits heute die prinzipienbasierte Ethik-Logik von INTEGRA in Aktion mit unserem Validator:
+
+➡️ **[INTEGRA Protokoll Validator (v3.0) Live-Demo ausprobieren!](https://lumen-core-lab.github.io/ai-interaction-protocols/Integra%20Validator%20UI.html)**  
+*Hinweis: Diese Demo visualisiert die Grundlagen der ethischen Entscheidungsfindung. Eine neue Demo, die die volle Komplexität von v4.1, ASO und EVA abbildet, ist in Planung.*
+
+---
+
+**Vielen Dank für Ihr Interesse am INTEGRA Protokoll – gestalten wir gemeinsam eine ethische Zukunft der KI!**
