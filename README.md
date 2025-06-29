@@ -60,7 +60,6 @@ Konzept: Das umfassendste Framework für ganzheitliche, lernfähige und selbstre
 
 📊 Erfolgsmetriken
 
-(Dieser Abschnitt bleibt unverändert, da er wichtige und prägnante Informationen liefert.)
 Für APEX-Implementierungen:
 
     Risikoreduktion: >90% weniger Vorfälle
@@ -123,7 +122,6 @@ Wie man beiträgt:
     Klein anfangen: Kommentiert Issues, schlagt Verbesserungen vor, teilt Erfahrungen.
     Vertrauen aufbauen: Qualitätsbeiträge führen zu größeren Rollen.
 
-Siehe <CONTRIBUTING.md> für detaillierte Richtlinien.
 📚 Akademische und Forschungsnutzung
 
 Diese Protokolle bieten reichhaltiges Material für:
@@ -136,6 +134,7 @@ Diese Protokolle bieten reichhaltiges Material für:
 Zitierformat
 
 Knape, D. (2025). KI-Interaktions-Protokolle: APEX, LUMEN, FUSION und INTEGRA. GitHub Repository: https://github.com/lumen-core-lab/ai-interaction-protocols
+
 💡 Abschließende Gedanken
 
 "Ich bin nur ein normaler Mensch, der einige Fragen gestellt und auf die Antworten gehört hat. Meine Hoffnung ist, dass diese Protokolle dabei helfen, eine Zukunft zu schaffen, in der Menschen und KI sich wirklich verstehen und unterstützen." – Dominik Knape
