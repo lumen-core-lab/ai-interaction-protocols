@@ -1,4 +1,4 @@
-NTEGRA Protokoll v4.2: Die Ethische KI-Entscheidungsarchitektur
+INTEGRA Protokoll v4.2: Die Ethische KI-Entscheidungsarchitektur
 
 INTEGRA Protokoll v4.2 ist ein fundamentaler Sprung nach vorne und ersetzt direkt die bisherige Version 4.1. Es vereint und erweitert alle Funktionen von v4.1 und bietet nun erstmalig volle Transparenz und die garantierte Einhaltung offizieller Standards.
 
