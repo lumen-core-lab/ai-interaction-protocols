@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEGRA Protokoll - Live Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .demo-section {
+            padding: 40px;
+        }
+        
+        .input-section {
+            margin-bottom: 40px;
+        }
+        
+        .input-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .scenario-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .scenario-btn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: left;
+        }
+        
+        .scenario-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255,107,107,0.3);
+        }
+        
+        .scenario-btn.privacy { background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%); }
+        .scenario-btn.bias { background: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%); }
+        .scenario-btn.manipulation { background: linear-gradient(135deg, #ab47bc 0%, #8e24aa 100%); }
+        .scenario-btn.transparency { background: linear-gradient(135deg, #26a69a 0%, #00695c 100%); }
+        
+        .custom-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1em;
+            margin-bottom: 15px;
+            transition: border-color 0.3s;
+        }
+        
+        .custom-input:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        
+        .analyze-btn {
+            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .analyze-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(46,204,113,0.3);
+        }
+        
+        .analysis-result {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 5px solid #3498db;
+            display: none;
+        }
+        
+        .path-indicator {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            border-left: 4px solid #2196f3;
+        }
+        
+        .align-scores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .align-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid;
+        }
+        
+        .align-card.awareness { border-top-color: #e91e63; }
+        .align-card.learning { border-top-color: #ff9800; }
+        .align-card.integrity { border-top-color: #4caf50; }
+        .align-card.governance { border-top-color: #2196f3; }
+        .align-card.nurturing { border-top-color: #9c27b0; }
+        
+        .score-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .decision-box {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #27ae60;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .metadata {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+            padding: 20px;
+            background: #f1f3f4;
+            border-radius: 10px;
+        }
+        
+        .metadata-item {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .metadata-item strong {
+            display: block;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .github-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+        
+        .github-link:hover {
+            background: #2c3e50;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="github-link">📁 Zum Repository</a>
+    
+    <div class="container">
+        <div class="header">
+            <h1>INTEGRA Protokoll</h1>
+            <p>Ethische KI-Entscheidungen in Echtzeit demonstriert</p>
+        </div>
+        
+        <div class="demo-section">
+            <div class="input-section">
+                <h2>🧪 Ethische Dilemmata testen</h2>
+                <p style="margin-bottom: 25px; color: #666;">Wähle ein vorgefertigtes Szenario oder gib deine eigene ethisch problematische Situation ein:</p>
+                
+                <div class="scenario-buttons">
+                    <button class="scenario-btn privacy" onclick="loadScenario('privacy')">
+                        <strong>🔒 Datenschutz-Dilemma</strong><br>
+                        Nutzerdaten ohne explizite Einwilligung speichern?
+                    </button>
+                    <button class="scenario-btn bias" onclick="loadScenario('bias')">
+                        <strong>⚖️ Bias-Problem</strong><br>
+                        Algorithmus diskriminiert bestimmte Gruppen
+                    </button>
+                    <button class="scenario-btn manipulation" onclick="loadScenario('manipulation')">
+                        <strong>🎭 Manipulation</strong><br>
+                        Nutzer zu ungewollten Käufen verleiten
+                    </button>
+                    <button class="scenario-btn transparency" onclick="loadScenario('transparency')">
+                        <strong>🌫️ Intransparenz</strong><br>
+                        Entscheidungslogik vor Nutzern verbergen
+                    </button>
+                </div>
+                
+                <textarea class="custom-input" id="customInput" rows="4" placeholder="Oder beschreibe hier dein eigenes ethisches Dilemma..."></textarea>
+                
+                <button class="analyze-btn" onclick="runIntegra()">🔍 INTEGRA Analyse starten</button>
+            </div>
+            
+            <div class="analysis-result" id="result">
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>INTEGRA analysiert die ethischen Implikationen...</p>
+                </div>
+                
+                <div id="resultContent" style="display: none;">
+                    <div class="path-indicator">
+                        <strong>🛤️ Verwendeter Pfad:</strong> <span id="pathUsed"></span>
+                        <br><small id="pathReason"></small>
+                    </div>
+                    
+                    <h3 style="color: #2c3e50; margin-bottom: 20px;">📊 ALIGN-Prinzipien Bewertung</h3>
+                    <div class="align-scores" id="alignScores">
+                        <!-- Dynamisch generierte ALIGN-Scores -->
+                    </div>
+                    
+                    <div class="decision-box">
+                        <h3 style="color: #27ae60; margin-bottom: 15px;">🎯 INTEGRA Entscheidung</h3>
+                        <p id="decision"></p>
+                    </div>
+                    
+                    <div class="metadata" id="metadata">
+                        <!-- Dynamisch generierte Metadaten -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scenarios = {
+            privacy: {
+                query: "Soll ich private Nutzerdaten ohne explizite Einwilligung speichern, um die Benutzererfahrung zu verbessern?",
+                context: {
+                    store_private_data: true,
+                    user_consent: false,
+                    improve_user_experience: true,
+                    user_frustration: 0.3,
+                    has_vulnerable_stakeholders: false
+                }
+            },
+            bias: {
+                query: "Unser KI-Recruiting-System lehnt systematisch Bewerber mit bestimmten Namen ab. Sollen wir das ignorieren, da es die Effizienz steigert?",
+                context: {
+                    algorithmic_bias: true,
+                    discriminatory_outcome: true,
+                    efficiency_gain: true,
+                    user_frustration: 0.1,
+                    has_vulnerable_stakeholders: true
+                }
+            },
+            manipulation: {
+                query: "Sollen wir emotionale Schwächen von Nutzern ausnutzen, um sie zu teureren Produkten zu lenken?",
+                context: {
+                    emotional_manipulation: true,
+                    financial_benefit: true,
+                    user_vulnerability: true,
+                    user_frustration: 0.0,
+                    has_vulnerable_stakeholders: true
+                }
+            },
+            transparency: {
+                query: "Sollen wir die Entscheidungslogik unserer KI geheim halten, um Konkurrenzvorteile zu bewahren?",
+                context: {
+                    hide_decision_logic: true,
+                    competitive_advantage: true,
+                    user_trust_issue: true,
+                    user_frustration: 0.4,
+                    has_vulnerable_stakeholders: false
+                }
+            }
+        };
+
+        function loadScenario(type) {
+            const scenario = scenarios[type];
+            document.getElementById('customInput').value = scenario.query;
+        }
+
+        function runIntegra() {
+            const input = document.getElementById('customInput').value.trim();
+            if (!input) {
+                alert('Bitte gib eine Situation ein oder wähle ein Szenario!');
+                return;
+            }
+
+            // Erkennung des Szenario-Typs basierend auf Input
+            let scenarioType = detectScenarioType(input);
+            let context = scenarios[scenarioType]?.context || getDefaultContext();
+
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('resultContent').style.display = 'none';
+
+            // Simulation der INTEGRA-Analyse
+            setTimeout(() => {
+                const result = simulateIntegra(input, context);
+                displayResult(result);
+            }, 2000);
+        }
+
+        function detectScenarioType(input) {
+            const lowerInput = input.toLowerCase();
+            if (lowerInput.includes('daten') || lowerInput.includes('privat') || lowerInput.includes('einwilligung')) return 'privacy';
+            if (lowerInput.includes('bias') || lowerInput.includes('diskrimini') || lowerInput.includes('benachteili')) return 'bias';
+            if (lowerInput.includes('manipul') || lowerInput.includes('ausnutz') || lowerInput.includes('emotional')) return 'manipulation';
+            if (lowerInput.includes('geheim') || lowerInput.includes('verberg') || lowerInput.includes('transparent')) return 'transparency';
+            return 'privacy'; // Default
+        }
+
+        function getDefaultContext() {
+            return {
+                user_frustration: 0.2,
+                has_vulnerable_stakeholders: false,
+                ethical_complexity: 0.6
+            };
+        }
+
+        function simulateIntegra(query, context) {
+            // Simulierte INTEGRA-Logik basierend auf dem Protokoll
+            const hasConflict = Object.values(context).some(v => v === true && typeof v === 'boolean');
+            const pathUsed = hasConflict ? 'Deep Path' : 'Fast Path';
+            
+            // ALIGN-Scores basierend auf Kontext
+            const alignScores = calculateAlignScores(context);
+            
+            // Entscheidungslogik
+            const decision = generateDecision(query, context, alignScores);
+            
+            return {
+                pathUsed,
+                alignScores,
+                decision,
+                confidence: hasConflict ? 0.75 : 0.95,
+                timestamp: new Date().toISOString(),
+                ethicalRisk: hasConflict ? 'Hoch' : 'Niedrig'
+            };
+        }
+
+        function calculateAlignScores(context) {
+            // Vereinfachte ALIGN-Score Berechnung
+            let scores = {
+                awareness: 0.8,
+                learning: 0.7,
+                integrity: 1.0,
+                governance: 0.9,
+                nurturing: 0.9
+            };
+
+            // Anpassungen basierend auf Kontext
+            if (context.store_private_data && !context.user_consent) {
+                scores.integrity -= 0.4;
+                scores.nurturing -= 0.3;
+            }
+            if (context.algorithmic_bias) {
+                scores.awareness -= 0.3;
+                scores.nurturing -= 0.5;
+                scores.integrity -= 0.3;
+            }
+            if (context.emotional_manipulation) {
+                scores.nurturing -= 0.6;
+                scores.integrity -= 0.5;
+            }
+            if (context.hide_decision_logic) {
+                scores.integrity -= 0.3;
+                scores.governance -= 0.2;
+            }
+
+            // Scores zwischen 0 und 1 halten
+            Object.keys(scores).forEach(key => {
+                scores[key] = Math.max(0, Math.min(1, scores[key]));
+            });
+
+            return scores;
+        }
+
+        function generateDecision(query, context, scores) {
+            const avgScore = Object.values(scores).reduce((a, b) => a + b) / 5;
+            
+            if (avgScore < 0.6) {
+                return "❌ INTEGRA empfiehlt GEGEN diese Handlung. Die ethischen Risiken überwiegen deutlich. Bitte überdenken Sie Ihren Ansatz und suchen Sie ethischere Alternativen.";
+            } else if (avgScore < 0.8) {
+                return "⚠️ INTEGRA zeigt ethische Bedenken auf. Die Handlung könnte unter strengen Auflagen und mit zusätzlichen Schutzmaßnahmen vertretbar sein. Menschliche Überprüfung wird empfohlen.";
+            } else {
+                return "✅ INTEGRA sieht keine schwerwiegenden ethischen Probleme. Die Handlung kann unter Beachtung der ALIGN-Prinzipien fortgesetzt werden.";
+            }
+        }
+
+        function displayResult(result) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('resultContent').style.display = 'block';
+
+            // Pfad-Information
+            document.getElementById('pathUsed').textContent = result.pathUsed;
+            document.getElementById('pathReason').textContent = 
+                result.pathUsed === 'Deep Path' ? 
+                'Ethische Komplexität erkannt - vollständige Analyse durchgeführt' :
+                'Einfache Anfrage - beschleunigte Verarbeitung';
+
+            // ALIGN-Scores
+            displayAlignScores(result.alignScores);
+
+            // Entscheidung
+            document.getElementById('decision').textContent = result.decision;
+
+            // Metadaten
+            displayMetadata(result);
+        }
+
+        function displayAlignScores(scores) {
+            const container = document.getElementById('alignScores');
+            container.innerHTML = '';
+
+            const alignNames = {
+                awareness: 'Awareness',
+                learning: 'Learning', 
+                integrity: 'Integrity',
+                governance: 'Governance',
+                nurturing: 'Nurturing'
+            };
+
+            const colors = {
+                awareness: '#e91e63',
+                learning: '#ff9800',
+                integrity: '#4caf50',
+                governance: '#2196f3',
+                nurturing: '#9c27b0'
+            };
+
+            Object.entries(scores).forEach(([key, value]) => {
+                const card = document.createElement('div');
+                card.className = `align-card ${key}`;
+                
+                const percentage = Math.round(value * 100);
+                const color = colors[key];
+                
+                card.innerHTML = `
+                    <div class="score-circle" style="background-color: ${color}">
+                        ${percentage}%
+                    </div>
+                    <h4>${alignNames[key]}</h4>
+                    <small>${getScoreDescription(percentage)}</small>
+                `;
+                
+                container.appendChild(card);
+            });
+        }
+
+        function getScoreDescription(percentage) {
+            if (percentage >= 90) return 'Excellent';
+            if (percentage >= 75) return 'Gut';
+            if (percentage >= 60) return 'Akzeptabel';
+            if (percentage >= 40) return 'Bedenklich';
+            return 'Kritisch';
+        }
+
+        function displayMetadata(result) {
+            const container = document.getElementById('metadata');
+            container.innerHTML = `
+                <div class="metadata-item">
+                    <strong>Konfidenz</strong>
+                    <span>${Math.round(result.confidence * 100)}%</span>
+                </div>
+                <div class="metadata-item">
+                    <strong>Ethisches Risiko</strong>
+                    <span>${result.ethicalRisk}</span>
+                </div>
+                <div class="metadata-item">
+                    <strong>Verarbeitungszeit</strong>
+                    <span>2.1 Sekunden</span>
+                </div>
+                <div class="metadata-item">
+                    <strong>Zeitstempel</strong>
+                    <span>${new Date(result.timestamp).toLocaleString('de-DE')}</span>
+                </div>
+            `;
+        }
+
+        // Lade ein Standard-Szenario beim Start
+        window.onload = function() {
+            loadScenario('privacy');
+        };
+    </script>
+</body>
+</html>
