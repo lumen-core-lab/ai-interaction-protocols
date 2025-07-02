@@ -1027,7 +1027,7 @@ print("🔒 Mit intelligenter Sicherheits-Validierung und adaptivem Vertrauen")
 print("🚨 Emergency-Stop und Eskalations-Management für kritische Situationen")
 ```
 
-if **name** == ‘**main**’:
+if **name** == '**main**':
 success = run_unit_tests()
 
 ```

@@ -475,7 +475,7 @@ for i, text in enumerate(test_cases, 1):
         print("✅ Alle ALIGN-Prinzipien erfüllt")
 ```
 
-if **name** == ‘**main**’:
+if **name** == '**main**':
 # Wenn Datei direkt ausgeführt wird
 success = run_unit_tests()
 

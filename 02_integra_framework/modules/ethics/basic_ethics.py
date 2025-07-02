@@ -681,7 +681,7 @@ for i, text in enumerate(test_cases, 1):
         print("✅ Keine ethischen Bedenken")
 ```
 
-if **name** == ‘**main**’:
+if **name** == '**main**':
 success = run_unit_tests()
 
 ```

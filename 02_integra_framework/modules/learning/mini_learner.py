@@ -60,7 +60,7 @@ implicit_feedback_weight: float = 0.2   # Automatische Analyse
 class LearningEvent:
 """📝 Einzelnes Lern-Ereignis für Tracking"""
 timestamp: str
-feedback_type: str              # ‘positive’, ‘negative’, ‘implicit’
+feedback_type: str              # 'positive', 'negative', 'implicit'
 principle_affected: str
 old_weight: float
 new_weight: float
@@ -512,7 +512,7 @@ return context
 
 def provide_feedback(
 learner: INTEGRAMiniLearner,
-feedback_type: str,  # ‘positive’, ‘negative’, ‘neutral’
+feedback_type: str,  # 'positive', 'negative', 'neutral'
 principle: Optional[str] = None,
 profile: Optional[Dict[str, Any]] = None,
 context: Optional[Dict[str, Any]] = None

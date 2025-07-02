@@ -706,7 +706,7 @@ for key, value in stats.items():
         print(f"   {key}: {value}")
 ```
 
-if **name** == ‘**main**’:
+if **name** == '**main**':
 success = run_unit_tests()
 
 ```

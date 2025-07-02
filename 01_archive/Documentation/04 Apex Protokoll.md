@@ -319,19 +319,19 @@ Integration Marketplace
     Tableau: Business metrics visualization
 
 11. Why APEX Wins: The Cold Truth
-It’s Not About Being "Good" - It’s About Being Smart
+It's Not About Being "Good" - It's About Being Smart
 
-Traditional ethics: "Do the right thing because it’s right" APEX: "Do the right thing because it makes money"
+Traditional ethics: "Do the right thing because it's right" APEX: "Do the right thing because it makes money"
 The Business Reality
 
-    CFOs don’t care about philosophy
-    CTOs don’t want complexity
+    CFOs don't care about philosophy
+    CTOs don't want complexity
     CEOs want competitive advantage
     Boards want risk mitigation
 
 The APEX Promise
 
-    "Implement APEX and your AI will be more profitable, less risky, and more efficient than your competitors’. The fact that it’s also more ethical is just good business."
+    "Implement APEX and your AI will be more profitable, less risky, and more efficient than your competitors'. The fact that it's also more ethical is just good business."
 
 12. Implementation Roadmap
 Week 1: Business Case

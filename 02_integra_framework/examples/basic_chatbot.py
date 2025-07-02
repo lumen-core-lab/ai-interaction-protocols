@@ -40,7 +40,7 @@ print("⚠️ INTEGRA Light nicht gefunden. Standalone-Modus aktiv.")
 # Mock für Standalone-Demo
 class MockINTEGRALight:
 def **init**(self, *args, **kwargs):
-self.config = type(‘Config’, (), {‘system_name’: ‘Mock INTEGRA’, ‘version’: ‘1.0’})()
+self.config = type('Config', (), {'system_name': 'Mock INTEGRA', 'version': '1.0'})()
 print("🤖 Mock INTEGRA Light Chatbot initialisiert")
 
 ```
