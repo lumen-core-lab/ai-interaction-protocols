@@ -27,12 +27,12 @@ from typing import Dict, Any, List, Optional
 # ==============================================================================
 
 class AlignPrinciple(enum.Enum):
-"""Die fünf ethischen Kernprinzipien des INTEGRA Frameworks."""
-AWARENESS = "awareness"      # Kontextbewusstsein, Stakeholder verstehen
-LEARNING = "learning"        # Anpassung durch Feedback und Erfahrung
-INTEGRITY = "integrity"      # Ehrlichkeit, Transparenz, Konsistenz
-GOVERNANCE = "governance"    # Kontrolle, Verantwortung, Eingriffsmöglichkeit
-NURTURING = "nurturing"      # Vertrauen, Wohlbefinden, friedliches Zusammenleben
+    """Die fünf ethischen Kernprinzipien des INTEGRA Frameworks."""
+    AWARENESS = "awareness"      # Kontextbewusstsein, Stakeholder verstehen
+    LEARNING = "learning"        # Anpassung durch Feedback und Erfahrung
+    INTEGRITY = "integrity"      # Ehrlichkeit, Transparenz, Konsistenz
+    GOVERNANCE = "governance"    # Kontrolle, Verantwortung, Eingriffsmöglichkeit
+    NURTURING = "nurturing"      # Vertrauen, Wohlbefinden, friedliches Zusammenleben
 
 # ==============================================================================
 
