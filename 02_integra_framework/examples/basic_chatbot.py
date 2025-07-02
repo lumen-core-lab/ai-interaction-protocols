@@ -36,12 +36,12 @@ try:
     from ..versions.light import INTEGRALight, create_integra_light, INTEGRALightConfig, SecurityLevel, ProcessingMode
     from ..versions.light import quick_ethical_check
 except ImportError:
-print("⚠️ INTEGRA Light nicht gefunden. Standalone-Modus aktiv.")
-# Mock für Standalone-Demo
-class MockINTEGRALight:
-def **init**(self, *args, **kwargs):
-self.config = type('Config', (), {'system_name': 'Mock INTEGRA', 'version': '1.0'})()
-print("🤖 Mock INTEGRA Light Chatbot initialisiert")
+    print("⚠️ INTEGRA Light nicht gefunden. Standalone-Modus aktiv.")
+    # Mock für Standalone-Demo
+    class MockINTEGRALight:
+    def **init**(self, *args, **kwargs):
+    self.config = type('Config', (), {'system_name': 'Mock INTEGRA', 'version': '1.0'})()
+    print("🤖 Mock INTEGRA Light Chatbot initialisiert")
 
 ```
     def process_request(self, query, **kwargs):
