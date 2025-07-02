@@ -1,11 +1,11 @@
 APEX - Adaptive Pragmatic Ethics eXecution Protocol
 
-    “Ethisch richtig. Geschäftlich smart. Einfach umsetzbar.”
+    "Ethisch richtig. Geschäftlich smart. Einfach umsetzbar."
 
 Entwickelt von Dominik Knape | lumenprotokoll@gmail.com
 Warum APEX die Welt verändert
 
-Das Problem: Ethische KI-Systeme sind entweder zu langsam (nicht adoptiert) oder zu komplex (nicht verstanden) oder zu “soft” (nicht ernst genommen).
+Das Problem: Ethische KI-Systeme sind entweder zu langsam (nicht adoptiert) oder zu komplex (nicht verstanden) oder zu "soft" (nicht ernst genommen).
 
 Die Lösung: APEX kombiniert die Performance von v4.0 mit der Balance von v5.0, aber eliminiert alles Emotionale zugunsten messbarer Business-Outcomes.
 
@@ -230,7 +230,7 @@ Slow (>100ms) 	Fast (<3ms)
 Complex setup 	One-line integration
 Compliance cost 	Profit center
 Risk after incident 	Risk prevention
-vs. “Soft” AI Ethics
+vs. "Soft" AI Ethics
 
     No emotions: Pure business logic
     No subjectivity: Measurable outcomes only
@@ -319,9 +319,9 @@ Integration Marketplace
     Tableau: Business metrics visualization
 
 11. Why APEX Wins: The Cold Truth
-It’s Not About Being “Good” - It’s About Being Smart
+It’s Not About Being "Good" - It’s About Being Smart
 
-Traditional ethics: “Do the right thing because it’s right” APEX: “Do the right thing because it makes money”
+Traditional ethics: "Do the right thing because it’s right" APEX: "Do the right thing because it makes money"
 The Business Reality
 
     CFOs don’t care about philosophy
@@ -331,7 +331,7 @@ The Business Reality
 
 The APEX Promise
 
-    “Implement APEX and your AI will be more profitable, less risky, and more efficient than your competitors’. The fact that it’s also more ethical is just good business.”
+    "Implement APEX and your AI will be more profitable, less risky, and more efficient than your competitors’. The fact that it’s also more ethical is just good business."
 
 12. Implementation Roadmap
 Week 1: Business Case

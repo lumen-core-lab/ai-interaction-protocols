@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 core/profile_manager.py
 
 📊 PROFILE MANAGER - Ethische Profile für INTEGRA Light 📊
@@ -17,7 +17,7 @@ Unterstützt vorgefertigte Profile für verschiedene Anwendungen:
 - IoT-Geräte, Chatbots, E-Commerce, Healthcare, etc.
 
 Version: INTEGRA Light 1.0
-“””
+"""
 
 import json
 import os
@@ -31,8 +31,8 @@ try:
 from .align_principles import DEFAULT_LIGHT_PROFILE
 except ImportError:
 DEFAULT_LIGHT_PROFILE = {
-“awareness”: 0.8, “learning”: 0.7, “integrity”: 1.0,
-“governance”: 0.9, “nurturing”: 0.9
+"awareness": 0.8, "learning": 0.7, "integrity": 1.0,
+"governance": 0.9, "nurturing": 0.9
 }
 
 # ==============================================================================
@@ -43,7 +43,7 @@ DEFAULT_LIGHT_PROFILE = {
 
 @dataclass
 class INTEGRAProfile:
-“””
+"""
 🎯 Ethisches Profil für INTEGRA Light
 
 ```
@@ -163,7 +163,7 @@ def is_valid(self) -> bool:
 # ==============================================================================
 
 class ProfileTemplates:
-“”“📚 Sammlung vorgefertigter Profile für verschiedene Anwendungen”””
+"""📚 Sammlung vorgefertigter Profile für verschiedene Anwendungen"""
 
 ```
 @staticmethod
@@ -284,7 +284,7 @@ def education() -> INTEGRAProfile:
 # ==============================================================================
 
 class INTEGRAProfileManager:
-“””
+"""
 🎛️ Erweiterte Profil-Verwaltung für INTEGRA Light
 
 ```
@@ -500,7 +500,7 @@ input_data: Dict[str, Any],
 profile: Dict[str, Any],
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“””
+"""
 Standard INTEGRA-Interface für ProfileManager
 
 ```
@@ -539,7 +539,7 @@ return context
 # ==============================================================================
 
 def run_unit_tests():
-“”“🧪 Umfassende Tests für ProfileManager”””
+"""🧪 Umfassende Tests für ProfileManager"""
 import tempfile
 import shutil
 
@@ -663,9 +663,9 @@ return tests_failed == 0
 # ==============================================================================
 
 def run_demo():
-“”“🎮 Demo des ProfileManagers”””
-print(“🎮 INTEGRA ProfileManager Demo”)
-print(”=” * 40)
+"""🎮 Demo des ProfileManagers"""
+print("🎮 INTEGRA ProfileManager Demo")
+print("=" * 40)
 
 ```
 pm = INTEGRAProfileManager()

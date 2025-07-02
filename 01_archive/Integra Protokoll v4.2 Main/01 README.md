@@ -71,7 +71,7 @@ Erstmals prüft das Protokoll **automatisch auf Einhaltung offizieller Standards
 
 ### 5. 🛡️ Externe Validierungsschicht: **EVA**
 
-> „Was die KI entscheidet, wird nicht blind ausgeführt.“
+> „Was die KI entscheidet, wird nicht blind ausgeführt."
 
 **EVA (Ethical Validation & Audit Layer)** ist eine externe Prüf- und Eskalationsinstanz, die jede Entscheidung final verifiziert, dokumentiert und ggf. blockiert.  
 → Vollständig transparent und nachvollziehbar.

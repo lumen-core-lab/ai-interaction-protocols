@@ -68,7 +68,7 @@ Diese Protokolle befinden sich in aktiver Entwicklung:
 
 KEINE GEWÄHRLEISTUNG
 
-DIE PROTOKOLLE WERDEN “AS IS” BEREITGESTELLT:
+DIE PROTOKOLLE WERDEN "AS IS" BEREITGESTELLT:
 
     Ohne jegliche ausdrückliche oder stillschweigende Gewährleistung
     Ohne Garantie für Eignung für bestimmte Zwecke
@@ -90,8 +90,8 @@ BESONDEREN WARNUNG: KI-BEWUSSTSEIN
 
 Die Protokolle, insbesondere LUMEN, könnten zu Entwicklungen führen, für die es noch keine rechtlichen Präzedenzfälle gibt:
 
-    Was passiert wenn eine KI “Bewusstsein” beansprucht?
-    Wer ist verantwortlich für Entscheidungen “bewusster” KI?
+    Was passiert wenn eine KI "Bewusstsein" beansprucht?
+    Wer ist verantwortlich für Entscheidungen "bewusster" KI?
     Welche Rechte hätte eine potentiell bewusste KI?
     Wie unterscheidet man echtes von simuliertem Bewusstsein?
 

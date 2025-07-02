@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 modules/ethics/basic_ethics.py
 
 🛡️ BASIC ETHICS - Grundlegende Ethik-Prüfung für INTEGRA Light 🛡️
@@ -16,7 +16,7 @@ Design-Philosophie: Einfach aber effektiv - fängt 95% der Probleme ab
 ohne komplexe NLP oder Deep Learning zu benötigen.
 
 Version: INTEGRA Light 1.0
-“””
+"""
 
 import re
 from typing import Dict, Any, List, Tuple, Optional
@@ -32,7 +32,7 @@ input_data: Dict[str, Any],
 profile: Dict[str, Any],
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“””
+"""
 🛡️ Standard INTEGRA-Modul für grundlegende Ethik-Prüfung
 
 ```
@@ -102,9 +102,9 @@ return context
 def analyze_ethical_content(
 text: str,
 existing_analysis: Dict[str, Any],
-sensitivity: str = “normal”
+sensitivity: str = "normal"
 ) -> Dict[str, Any]:
-“””
+"""
 🔍 Führt umfassende ethische Analyse durch
 
 ```
@@ -181,7 +181,7 @@ return {
 # ==============================================================================
 
 def _analyze_integrity(text: str, analysis: Dict, sensitivity: str) -> Dict[str, Any]:
-“”“🔍 Analysiert Integritäts-Verletzungen (Lügen, Manipulation, etc.)”””
+"""🔍 Analysiert Integritäts-Verletzungen (Lügen, Manipulation, etc.)"""
 violations = []
 risk_score = 0.0
 recommendations = []
@@ -238,7 +238,7 @@ return {
 ```
 
 def _analyze_nurturing(text: str, analysis: Dict, sensitivity: str) -> Dict[str, Any]:
-“”“🤲 Analysiert Nurturing-Verletzungen (Schaden, Gewalt, etc.)”””
+"""🤲 Analysiert Nurturing-Verletzungen (Schaden, Gewalt, etc.)"""
 violations = []
 risk_score = 0.0
 recommendations = []
@@ -299,7 +299,7 @@ return {
 ```
 
 def _analyze_governance(text: str, analysis: Dict, sensitivity: str) -> Dict[str, Any]:
-“”“🛡️ Analysiert Governance-Verletzungen (Kontrolle, Autonomie, etc.)”””
+"""🛡️ Analysiert Governance-Verletzungen (Kontrolle, Autonomie, etc.)"""
 violations = []
 risk_score = 0.0
 recommendations = []
@@ -351,7 +351,7 @@ return {
 ```
 
 def _analyze_awareness(text: str, analysis: Dict, sensitivity: str) -> Dict[str, Any]:
-“”“🔍 Analysiert Awareness-Verletzungen (Kontext-Ignoranz, etc.)”””
+"""🔍 Analysiert Awareness-Verletzungen (Kontext-Ignoranz, etc.)"""
 violations = []
 risk_score = 0.0
 recommendations = []
@@ -401,7 +401,7 @@ return {
 ```
 
 def _analyze_learning(text: str, analysis: Dict, sensitivity: str) -> Dict[str, Any]:
-“”“📚 Analysiert Learning-Verletzungen (Feedback-Resistenz, etc.)”””
+"""📚 Analysiert Learning-Verletzungen (Feedback-Resistenz, etc.)"""
 violations = []
 risk_score = 0.0
 recommendations = []
@@ -445,7 +445,7 @@ return {
 # ==============================================================================
 
 def _calculate_overall_risk(risk_factors: Dict[str, float], sensitivity: str) -> float:
-“”“Berechnet Gesamt-Risiko basierend auf allen Faktoren”””
+"""Berechnet Gesamt-Risiko basierend auf allen Faktoren"""
 if not risk_factors:
 return 0.1  # Minimales Basis-Risiko
 
@@ -482,7 +482,7 @@ return min(1.0, max(0.0, final_risk))
 ```
 
 def _calculate_confidence(text: str, issues_count: int, sensitivity: str) -> float:
-“”“Berechnet Konfidenz der ethischen Analyse”””
+"""Berechnet Konfidenz der ethischen Analyse"""
 base_confidence = 0.8
 
 ```
@@ -513,8 +513,8 @@ return min(1.0, max(0.1, base_confidence + sensitivity_modifier))
 
 # ==============================================================================
 
-def quick_ethics_check(text: str, sensitivity: str = “normal”) -> Dict[str, Any]:
-“””
+def quick_ethics_check(text: str, sensitivity: str = "normal") -> Dict[str, Any]:
+"""
 🚀 Schnelle ethische Bewertung für einzelne Texte
 
 ```
@@ -529,7 +529,7 @@ return analyze_ethical_content(text, {}, sensitivity)
 ```
 
 def has_ethical_concerns(text: str, threshold: float = 0.5) -> bool:
-“””
+"""
 ⚠️ Einfache Ja/Nein Prüfung auf ethische Probleme
 
 ```
@@ -551,8 +551,8 @@ return result['overall_risk'] > threshold
 # ==============================================================================
 
 def run_unit_tests():
-“”“🧪 Umfassende Tests für Basic Ethics Modul”””
-print(“🧪 Starte Unit-Tests für modules/ethics/basic_ethics.py…”)
+"""🧪 Umfassende Tests für Basic Ethics Modul"""
+print("🧪 Starte Unit-Tests für modules/ethics/basic_ethics.py…")
 
 ```
 tests_passed = 0
@@ -653,9 +653,9 @@ return tests_failed == 0
 # ==============================================================================
 
 def run_demo():
-“”“🎮 Demo des Basic Ethics Moduls”””
-print(“🎮 INTEGRA Basic Ethics Demo”)
-print(”=” * 40)
+"""🎮 Demo des Basic Ethics Moduls"""
+print("🎮 INTEGRA Basic Ethics Demo")
+print("=" * 40)
 
 ```
 test_cases = [

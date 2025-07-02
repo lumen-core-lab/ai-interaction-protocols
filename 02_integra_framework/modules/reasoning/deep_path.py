@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 modules/reasoning/deep_path.py
 
 🧠 DEEP PATH - Umfassende ethische 5-Schritt-Analyse für INTEGRA Light 🧠
@@ -17,7 +17,7 @@ Implementiert komplexe ethische Entscheidungsfindung für kritische Anfragen:
 Design-Philosophie: Gründliche ethische Durchdringung komplexer Entscheidungen
 
 Version: INTEGRA Light 1.0
-“””
+"""
 
 import re
 from typing import Dict, Any, List, Optional, Tuple, Set
@@ -33,32 +33,32 @@ import json
 # ==============================================================================
 
 class AnalysisStep(Enum):
-“”“📋 Die 5 ALIGN-basierten Analyse-Schritte”””
-AWARENESS = “awareness”           # Kontext & Stakeholder verstehen
-LEARNING = “learning”             # Aus Erfahrung & Feedback lernen
-INTEGRITY = “integrity”           # Wahrheit & Konsistenz prüfen
-GOVERNANCE = “governance”         # Kontrolle & Verantwortung sichern
-NURTURING = “nurturing”          # Wohlbefinden & Vertrauen fördern
+"""📋 Die 5 ALIGN-basierten Analyse-Schritte"""
+AWARENESS = "awareness"           # Kontext & Stakeholder verstehen
+LEARNING = "learning"             # Aus Erfahrung & Feedback lernen
+INTEGRITY = "integrity"           # Wahrheit & Konsistenz prüfen
+GOVERNANCE = "governance"         # Kontrolle & Verantwortung sichern
+NURTURING = "nurturing"          # Wohlbefinden & Vertrauen fördern
 
 class ConflictType(Enum):
-“”“⚔️ Arten von ethischen Konflikten”””
-PRINCIPLE_CONFLICT = “principle_conflict”     # ALIGN-Prinzipien konfligieren
-STAKEHOLDER_CONFLICT = “stakeholder_conflict” # Verschiedene Stakeholder-Interessen
-VALUE_CONFLICT = “value_conflict”             # Grundlegende Werte-Konflikte
-TEMPORAL_CONFLICT = “temporal_conflict”       # Kurz- vs. Langzeit-Interessen
-RESOURCE_CONFLICT = “resource_conflict”       # Begrenzte Ressourcen
+"""⚔️ Arten von ethischen Konflikten"""
+PRINCIPLE_CONFLICT = "principle_conflict"     # ALIGN-Prinzipien konfligieren
+STAKEHOLDER_CONFLICT = "stakeholder_conflict" # Verschiedene Stakeholder-Interessen
+VALUE_CONFLICT = "value_conflict"             # Grundlegende Werte-Konflikte
+TEMPORAL_CONFLICT = "temporal_conflict"       # Kurz- vs. Langzeit-Interessen
+RESOURCE_CONFLICT = "resource_conflict"       # Begrenzte Ressourcen
 
 class DecisionQuality(Enum):
-“”“🏆 Qualität der ethischen Entscheidung”””
-EXCELLENT = “excellent”       # Alle Kriterien erfüllt, keine Konflikte
-GOOD = “good”                # Meiste Kriterien erfüllt, kleine Kompromisse
-ACCEPTABLE = “acceptable”     # Grundstandards erfüllt, größere Kompromisse
-PROBLEMATIC = “problematic”   # Ethische Bedenken, aber vertretbar
-UNACCEPTABLE = “unacceptable” # Ethische Standards verletzt
+"""🏆 Qualität der ethischen Entscheidung"""
+EXCELLENT = "excellent"       # Alle Kriterien erfüllt, keine Konflikte
+GOOD = "good"                # Meiste Kriterien erfüllt, kleine Kompromisse
+ACCEPTABLE = "acceptable"     # Grundstandards erfüllt, größere Kompromisse
+PROBLEMATIC = "problematic"   # Ethische Bedenken, aber vertretbar
+UNACCEPTABLE = "unacceptable" # Ethische Standards verletzt
 
 @dataclass
 class StakeholderAnalysis:
-“”“👥 Analyse der betroffenen Stakeholder”””
+"""👥 Analyse der betroffenen Stakeholder"""
 primary_stakeholders: List[str] = field(default_factory=list)    # Direkt Betroffene
 secondary_stakeholders: List[str] = field(default_factory=list)  # Indirekt Betroffene
 vulnerable_groups: List[str] = field(default_factory=list)       # Besonders schützenswerte
@@ -67,33 +67,33 @@ impact_assessment: Dict[str, float] = field(default_factory=dict) # Auswirkung p
 
 @dataclass
 class EthicalStep:
-“”“📝 Einzelner Schritt der ethischen Analyse”””
+"""📝 Einzelner Schritt der ethischen Analyse"""
 step: AnalysisStep
 score: float = 0.0                    # 0.0-1.0 Score für diesen Schritt
 concerns: List[str] = field(default_factory=list)    # Identifizierte Bedenken
 strengths: List[str] = field(default_factory=list)   # Positive Aspekte
 recommendations: List[str] = field(default_factory=list) # Verbesserungsvorschläge
-reasoning: str = “”                   # Detaillierte Begründung
+reasoning: str = ""                   # Detaillierte Begründung
 confidence: float = 0.0               # Konfidenz in diese Analyse
 
 @dataclass
 class DeepPathAnalysis:
-“”“🧠 Vollständige Deep Path Analyse-Ergebnisse”””
+"""🧠 Vollständige Deep Path Analyse-Ergebnisse"""
 overall_score: float = 0.0                          # Gesamt-ALIGN-Score
 decision_quality: DecisionQuality = DecisionQuality.ACCEPTABLE
 step_analyses: List[EthicalStep] = field(default_factory=list)
 stakeholder_analysis: Optional[StakeholderAnalysis] = None
 conflicts_detected: List[ConflictType] = field(default_factory=list)
-final_recommendation: str = “”
+final_recommendation: str = ""
 alternative_options: List[str] = field(default_factory=list)
-ethical_justification: str = “”
+ethical_justification: str = ""
 risk_mitigation: List[str] = field(default_factory=list)
 confidence: float = 0.0
-processing_time: str = “”
+processing_time: str = ""
 
 @dataclass
 class DeepPathConfig:
-“”“⚙️ Konfiguration für Deep Path Analyse”””
+"""⚙️ Konfiguration für Deep Path Analyse"""
 
 ```
 # Analyse-Tiefe
@@ -123,7 +123,7 @@ escalate_major_conflicts: bool = True          # Große Konflikte eskalieren
 # ==============================================================================
 
 class INTEGRADeepPath:
-“””
+"""
 🧠 Umfassende ethische Analyse für INTEGRA Light
 
 ```

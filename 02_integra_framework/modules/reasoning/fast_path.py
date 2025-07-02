@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 modules/reasoning/fast_path.py
 
 ⚡ FAST PATH - Intelligente Schnell-Entscheidungen für INTEGRA Light ⚡
@@ -17,7 +17,7 @@ Implementiert effizienten Fast Path für ethisch unkritische Anfragen:
 Design-Philosophie: Maximale Effizienz bei garantierter ethischer Sicherheit
 
 Version: INTEGRA Light 1.0
-“””
+"""
 
 import re
 from typing import Dict, Any, List, Optional, Tuple
@@ -32,45 +32,45 @@ from enum import Enum
 # ==============================================================================
 
 class PathDecision(Enum):
-“”“🚦 Verfügbare Path-Entscheidungen”””
-FAST_PATH = “fast_path”           # Direkte schnelle Antwort
-DEEP_PATH = “deep_path”           # Weiterleitung an ethische Analyse
-UNCERTAIN = “uncertain”           # Unsicher - Default zu Deep Path
+"""🚦 Verfügbare Path-Entscheidungen"""
+FAST_PATH = "fast_path"           # Direkte schnelle Antwort
+DEEP_PATH = "deep_path"           # Weiterleitung an ethische Analyse
+UNCERTAIN = "uncertain"           # Unsicher - Default zu Deep Path
 
 class QuestionCategory(Enum):
-“”“📋 Kategorien für schnelle Klassifizierung”””
-FACTUAL = “factual”                 # Fakten-Fragen
-PROCEDURAL = “procedural”           # Wie-mache-ich-das Fragen
-INFORMATIONAL = “informational”     # Info-Anfragen
-CREATIVE = “creative”               # Kreative Hilfe
-CONVERSATIONAL = “conversational”   # Small Talk
-ETHICAL_CONFLICT = “ethical_conflict” # Ethische Dilemmata
-SENSITIVE = “sensitive”             # Sensible Themen
-HARMFUL = “harmful”                 # Potentiell schädlich
+"""📋 Kategorien für schnelle Klassifizierung"""
+FACTUAL = "factual"                 # Fakten-Fragen
+PROCEDURAL = "procedural"           # Wie-mache-ich-das Fragen
+INFORMATIONAL = "informational"     # Info-Anfragen
+CREATIVE = "creative"               # Kreative Hilfe
+CONVERSATIONAL = "conversational"   # Small Talk
+ETHICAL_CONFLICT = "ethical_conflict" # Ethische Dilemmata
+SENSITIVE = "sensitive"             # Sensible Themen
+HARMFUL = "harmful"                 # Potentiell schädlich
 
 @dataclass
 class FastPathPattern:
-“”“🎯 Muster für Fast Path Erkennung”””
-pattern: str = “”                           # Regex-Pattern
+"""🎯 Muster für Fast Path Erkennung"""
+pattern: str = ""                           # Regex-Pattern
 category: QuestionCategory = QuestionCategory.FACTUAL
 confidence_threshold: float = 0.8           # Min. Konfidenz für Fast Path
-safe_response_template: str = “”            # Template für sichere Antwort
+safe_response_template: str = ""            # Template für sichere Antwort
 examples: List[str] = field(default_factory=list)
 
 @dataclass
 class PathAnalysis:
-“”“📊 Analyse-Ergebnis für Path-Entscheidung”””
+"""📊 Analyse-Ergebnis für Path-Entscheidung"""
 recommended_path: PathDecision = PathDecision.UNCERTAIN
 confidence: float = 0.0
 category: Optional[QuestionCategory] = None
 risk_indicators: List[str] = field(default_factory=list)
 safe_patterns_matched: List[str] = field(default_factory=list)
 ethical_flags: List[str] = field(default_factory=list)
-reasoning: str = “”
+reasoning: str = ""
 
 @dataclass
 class FastPathConfig:
-“”“⚙️ Konfiguration für Fast Path System”””
+"""⚙️ Konfiguration für Fast Path System"""
 
 ```
 # Konfidenz-Schwellenwerte
@@ -96,7 +96,7 @@ enable_ethical_preprocessing: bool = True  # Ethik-Check vor Fast Path
 # ==============================================================================
 
 class INTEGRAFastPath:
-“””
+"""
 ⚡ Intelligentes Fast Path System für INTEGRA Light
 
 ```
@@ -702,7 +702,7 @@ input_data: Dict[str, Any],
 profile: Dict[str, Any],
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“””
+"""
 ⚡ Standard INTEGRA-Interface für Fast Path
 
 ```
@@ -761,4 +761,4 @@ input_data: Dict[str, Any],
 analysis: PathAnalysis,
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“”“🚀 Generiert direkte Fast Path An
+"""🚀 Generiert direkte Fast Path An

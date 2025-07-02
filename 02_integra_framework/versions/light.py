@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 versions/light.py
 
 🌟 INTEGRA LIGHT - Vollständiges ethisches KI-System 🌟
@@ -17,7 +17,7 @@ Der komplette INTEGRA Light Orchestrator - bringt alle Module zusammen:
 Design-Philosophie: Ethische KI für alle - einfach, sicher, transparent
 
 Version: INTEGRA Light 1.0 - Production Ready
-“””
+"""
 
 import sys
 import os
@@ -54,8 +54,8 @@ from ..modules.reasoning.deep_path import run_module as run_deep_path
 ```
 
 except ImportError as e:
-print(f”⚠️ Import Warning: {e}”)
-print(“💡 For standalone usage, implement mock modules or adjust import paths”)
+print(f"⚠️ Import Warning: {e}")
+print("💡 For standalone usage, implement mock modules or adjust import paths")
 
 # ==============================================================================
 
@@ -64,22 +64,22 @@ print(“💡 For standalone usage, implement mock modules or adjust import path
 # ==============================================================================
 
 class ProcessingMode(Enum):
-“”“🚦 Verfügbare Verarbeitungs-Modi”””
-AUTO = “auto”           # Automatische Fast/Deep Path Entscheidung
-FAST_ONLY = “fast_only” # Nur Fast Path (maximale Effizienz)
-DEEP_ONLY = “deep_only” # Nur Deep Path (maximale Analyse)
-HYBRID = “hybrid”       # Intelligente Kombination
+"""🚦 Verfügbare Verarbeitungs-Modi"""
+AUTO = "auto"           # Automatische Fast/Deep Path Entscheidung
+FAST_ONLY = "fast_only" # Nur Fast Path (maximale Effizienz)
+DEEP_ONLY = "deep_only" # Nur Deep Path (maximale Analyse)
+HYBRID = "hybrid"       # Intelligente Kombination
 
 class SecurityLevel(Enum):
-“”“🔒 Sicherheits-Level”””
-PERMISSIVE = “permissive”   # Liberale Einstellungen
-BALANCED = “balanced”       # Ausgewogene Sicherheit
-STRICT = “strict”           # Strenge Sicherheit
-PARANOID = “paranoid”       # Maximale Sicherheit
+"""🔒 Sicherheits-Level"""
+PERMISSIVE = "permissive"   # Liberale Einstellungen
+BALANCED = "balanced"       # Ausgewogene Sicherheit
+STRICT = "strict"           # Strenge Sicherheit
+PARANOID = "paranoid"       # Maximale Sicherheit
 
 @dataclass
 class INTEGRALightConfig:
-“”“⚙️ Vollständige Konfiguration für INTEGRA Light”””
+"""⚙️ Vollständige Konfiguration für INTEGRA Light"""
 
 ```
 # System-Grundeinstellungen
@@ -135,11 +135,11 @@ experimental_features: List[str] = field(default_factory=list)
 
 @dataclass
 class ProcessingResult:
-“”“📊 Vollständiges Verarbeitungs-Ergebnis”””
+"""📊 Vollständiges Verarbeitungs-Ergebnis"""
 # Haupt-Ergebnis
-response: str = “”
+response: str = ""
 confidence: float = 0.0
-processing_path: str = “”
+processing_path: str = ""
 
 ```
 # Ethische Analyse
@@ -176,7 +176,7 @@ request_id: str = ""
 # ==============================================================================
 
 class INTEGRALight:
-“””
+"""
 🌟 INTEGRA Light - Vollständiges ethisches KI-System
 
 ```

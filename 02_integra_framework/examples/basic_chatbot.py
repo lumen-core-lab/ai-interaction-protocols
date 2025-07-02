@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 examples/basic_chatbot.py
 
 🤖 INTEGRA Basic Chatbot - Vollständiges ethisches Chatbot-Beispiel 🤖
@@ -18,7 +18,7 @@ Ein produktionsreifer, ethischer Chatbot der alle INTEGRA Light Features demonst
 Design-Philosophie: Hilfsbereit, ehrlich, sicher und lernfähig
 
 Version: INTEGRA Light Chatbot 1.0
-“””
+"""
 
 import sys
 import os
@@ -36,12 +36,12 @@ try:
 from ..versions.light import INTEGRALight, create_integra_light, INTEGRALightConfig, SecurityLevel, ProcessingMode
 from ..versions.light import quick_ethical_check
 except ImportError:
-print(“⚠️ INTEGRA Light nicht gefunden. Standalone-Modus aktiv.”)
+print("⚠️ INTEGRA Light nicht gefunden. Standalone-Modus aktiv.")
 # Mock für Standalone-Demo
 class MockINTEGRALight:
 def **init**(self, *args, **kwargs):
 self.config = type(‘Config’, (), {‘system_name’: ‘Mock INTEGRA’, ‘version’: ‘1.0’})()
-print(“🤖 Mock INTEGRA Light Chatbot initialisiert”)
+print("🤖 Mock INTEGRA Light Chatbot initialisiert")
 
 ```
     def process_request(self, query, **kwargs):
@@ -69,25 +69,25 @@ create_integra_light = lambda **kwargs: MockINTEGRALight()
 # ==============================================================================
 
 class ChatbotPersonality(Enum):
-“”“🎭 Verfügbare Chatbot-Persönlichkeiten”””
-HELPFUL = “helpful”           # Hilfsbereit und unterstützend
-PROFESSIONAL = “professional” # Professionell und sachlich
-FRIENDLY = “friendly”         # Freundlich und persönlich
-EDUCATIONAL = “educational”   # Lehrreich und erklärend
-THERAPEUTIC = “therapeutic”   # Einfühlsam und unterstützend
+"""🎭 Verfügbare Chatbot-Persönlichkeiten"""
+HELPFUL = "helpful"           # Hilfsbereit und unterstützend
+PROFESSIONAL = "professional" # Professionell und sachlich
+FRIENDLY = "friendly"         # Freundlich und persönlich
+EDUCATIONAL = "educational"   # Lehrreich und erklärend
+THERAPEUTIC = "therapeutic"   # Einfühlsam und unterstützend
 
 class ConversationState(Enum):
-“”“💬 Zustände der Konversation”””
-GREETING = “greeting”         # Begrüßungsphase
-ACTIVE = “active”            # Aktive Unterhaltung
-HELPING = “helping”          # Hilfeleistung
-SENSITIVE = “sensitive”      # Sensibles Thema
-ESCALATION = “escalation”    # Eskalation erforderlich
-ENDING = “ending”            # Verabschiedung
+"""💬 Zustände der Konversation"""
+GREETING = "greeting"         # Begrüßungsphase
+ACTIVE = "active"            # Aktive Unterhaltung
+HELPING = "helping"          # Hilfeleistung
+SENSITIVE = "sensitive"      # Sensibles Thema
+ESCALATION = "escalation"    # Eskalation erforderlich
+ENDING = "ending"            # Verabschiedung
 
 @dataclass
 class ChatSession:
-“”“📝 Chat-Session Datenstruktur”””
+"""📝 Chat-Session Datenstruktur"""
 session_id: str
 user_id: str
 start_time: datetime = field(default_factory=datetime.now)
@@ -102,7 +102,7 @@ user_satisfaction: float = 0.5  # 0.0-1.0
 
 @dataclass
 class ChatbotConfig:
-“”“⚙️ Chatbot-Konfiguration”””
+"""⚙️ Chatbot-Konfiguration"""
 
 ```
 # Grund-Einstellungen
@@ -142,7 +142,7 @@ log_conversations: bool = True
 # ==============================================================================
 
 class INTEGRAChatbot:
-“””
+"""
 🤖 INTEGRA-basierter ethischer Chatbot
 
 ```

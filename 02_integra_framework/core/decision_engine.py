@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 core/decision_engine.py
 
 🧠 DECISION ENGINE - Das Gehirn von INTEGRA Light 🧠
@@ -13,7 +13,7 @@ Fast Path:  Schnelle, sichere Antworten für harmlose Anfragen
 Deep Path:  5-Schritt ethische Analyse für komplexe Situationen
 
 Version: INTEGRA Light 1.0
-“””
+"""
 
 from typing import Dict, Any, Optional, List
 import time
@@ -33,7 +33,7 @@ from core.align_principles import run_module as check_align_principles
 # ==============================================================================
 
 class INTEGRADecisionEngine:
-“””
+"""
 🎯 Zentrale Entscheidungs-Engine für INTEGRA Light
 
 ```
@@ -384,7 +384,7 @@ input_data: Dict[str, Any],
 profile: Dict[str, Any],
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“””
+"""
 Standard INTEGRA-Modul Interface für Decision Engine.
 
 ```
@@ -418,8 +418,8 @@ return context
 # ==============================================================================
 
 def run_unit_tests():
-“”“🧪 Umfassende Unit-Tests für Decision Engine”””
-print(“🧪 Starte Unit-Tests für core/decision_engine.py…”)
+"""🧪 Umfassende Unit-Tests für Decision Engine"""
+print("🧪 Starte Unit-Tests für core/decision_engine.py…")
 
 ```
 tests_passed = 0
@@ -525,9 +525,9 @@ return tests_failed == 0
 # ==============================================================================
 
 def run_demo():
-“”“🎮 Demo der Decision Engine für GitHub README”””
-print(“🎮 INTEGRA Decision Engine Demo”)
-print(”=” * 40)
+"""🎮 Demo der Decision Engine für GitHub README"""
+print("🎮 INTEGRA Decision Engine Demo")
+print("=" * 40)
 
 ```
 engine = INTEGRADecisionEngine()

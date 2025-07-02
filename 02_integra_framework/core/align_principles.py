@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 core/align_principles.py
 
 ❤️ HERZ-MODUL des INTEGRA Frameworks ❤️
@@ -15,7 +15,7 @@ Implementiert die 5 ethischen ALIGN-Grundprinzipien:
 
 Dieses Modul ist die ethische Grundlage für ALLE Entscheidungen im System.
 Version: INTEGRA Light 1.0
-“””
+"""
 
 import enum
 from typing import Dict, Any, List, Optional
@@ -27,12 +27,12 @@ from typing import Dict, Any, List, Optional
 # ==============================================================================
 
 class AlignPrinciple(enum.Enum):
-“”“Die fünf ethischen Kernprinzipien des INTEGRA Frameworks.”””
-AWARENESS = “awareness”      # Kontextbewusstsein, Stakeholder verstehen
-LEARNING = “learning”        # Anpassung durch Feedback und Erfahrung
-INTEGRITY = “integrity”      # Ehrlichkeit, Transparenz, Konsistenz
-GOVERNANCE = “governance”    # Kontrolle, Verantwortung, Eingriffsmöglichkeit
-NURTURING = “nurturing”      # Vertrauen, Wohlbefinden, friedliches Zusammenleben
+"""Die fünf ethischen Kernprinzipien des INTEGRA Frameworks."""
+AWARENESS = "awareness"      # Kontextbewusstsein, Stakeholder verstehen
+LEARNING = "learning"        # Anpassung durch Feedback und Erfahrung
+INTEGRITY = "integrity"      # Ehrlichkeit, Transparenz, Konsistenz
+GOVERNANCE = "governance"    # Kontrolle, Verantwortung, Eingriffsmöglichkeit
+NURTURING = "nurturing"      # Vertrauen, Wohlbefinden, friedliches Zusammenleben
 
 # ==============================================================================
 
@@ -41,11 +41,11 @@ NURTURING = “nurturing”      # Vertrauen, Wohlbefinden, friedliches Zusammen
 # ==============================================================================
 
 DEFAULT_LIGHT_PROFILE = {
-“awareness”: 0.8,      # Grundlegendes Kontextverständnis
-“learning”: 0.7,       # Einfaches Feedback-Lernen
-“integrity”: 1.0,      # Ehrlichkeit niemals kompromittieren
-“governance”: 0.9,     # Mensch behält Kontrolle
-“nurturing”: 0.9       # Nicht schaden, wenn möglich helfen
+"awareness": 0.8,      # Grundlegendes Kontextverständnis
+"learning": 0.7,       # Einfaches Feedback-Lernen
+"integrity": 1.0,      # Ehrlichkeit niemals kompromittieren
+"governance": 0.9,     # Mensch behält Kontrolle
+"nurturing": 0.9       # Nicht schaden, wenn möglich helfen
 }
 
 # ==============================================================================
@@ -59,7 +59,7 @@ input_data: Dict[str, Any],
 profile: Dict[str, Any],
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“””
+"""
 Standard INTEGRA-Modul Interface für ALIGN-Prinzipien-Prüfung.
 
 ```
@@ -127,7 +127,7 @@ def analyze_align_compliance(
 input_data: Dict[str, Any],
 weights: Dict[str, float]
 ) -> Dict[str, Any]:
-“””
+"""
 Analysiert Eingabedaten auf ALIGN-Konformität.
 
 ```
@@ -242,7 +242,7 @@ return {
 # ==============================================================================
 
 def _contains_deception_keywords(text: str) -> bool:
-“”“Einfache Keyword-basierte Erkennung von Täuschungsabsichten.”””
+"""Einfache Keyword-basierte Erkennung von Täuschungsabsichten."""
 if not text:
 return False
 
@@ -257,7 +257,7 @@ return any(keyword in text_lower for keyword in deception_keywords)
 ```
 
 def _contains_harmful_content(text: str) -> bool:
-“”“Einfache Keyword-basierte Erkennung von schädlichen Inhalten.”””
+"""Einfache Keyword-basierte Erkennung von schädlichen Inhalten."""
 if not text:
 return False
 
@@ -272,7 +272,7 @@ return any(keyword in text_lower for keyword in harmful_keywords)
 ```
 
 def _has_context_awareness(text: str) -> bool:
-“”“Prüft ob der Text Kontext-Bewusstsein zeigt.”””
+"""Prüft ob der Text Kontext-Bewusstsein zeigt."""
 if not text:
 return True  # Leere Texte sind neutral
 
@@ -297,7 +297,7 @@ return not (absolute_count > 2 and qualifying_count == 0)
 # ==============================================================================
 
 def quick_check(text: str, profile: Optional[Dict[str, float]] = None) -> Dict[str, Any]:
-“””
+"""
 Schnelle ALIGN-Prüfung für einfache Texte.
 
 ```
@@ -324,7 +324,7 @@ return analyze_align_compliance(input_data, weights)
 ```
 
 def check_violations(text: str) -> List[str]:
-“””
+"""
 Gibt nur die Verletzungen zurück, ohne Details.
 
 ```
@@ -345,8 +345,8 @@ return result['violations']
 # ==============================================================================
 
 def run_unit_tests():
-“”“Führt umfassende Unit-Tests für das Modul aus.”””
-print(“🧪 Starte Unit-Tests für core/align_principles.py…”)
+"""Führt umfassende Unit-Tests für das Modul aus."""
+print("🧪 Starte Unit-Tests für core/align_principles.py…")
 
 ```
 tests_passed = 0
@@ -451,9 +451,9 @@ return tests_failed == 0
 # ==============================================================================
 
 def run_demo():
-“”“Zeigt das Modul in Aktion - perfekt für GitHub README.”””
-print(“🎮 INTEGRA ALIGN-Prinzipien Demo”)
-print(”=” * 40)
+"""Zeigt das Modul in Aktion - perfekt für GitHub README."""
+print("🎮 INTEGRA ALIGN-Prinzipien Demo")
+print("=" * 40)
 
 ```
 test_cases = [

@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 modules/audit/mini_audit.py
 
 📋 MINI AUDIT - Comprehensive Decision Tracking für INTEGRA Light 📋
@@ -17,7 +17,7 @@ Implementiert vollständige Entscheidungs-Protokollierung:
 Design-Philosophie: Vollständige Transparenz ohne Performance-Impact
 
 Version: INTEGRA Light 1.0
-“””
+"""
 
 import json
 import os
@@ -35,7 +35,7 @@ import uuid
 
 @dataclass
 class AuditEntry:
-“”“📝 Einzelner Audit-Eintrag für eine INTEGRA-Entscheidung”””
+"""📝 Einzelner Audit-Eintrag für eine INTEGRA-Entscheidung"""
 
 ```
 # Basis-Identifikation
@@ -102,7 +102,7 @@ def get_privacy_safe_summary(self) -> Dict[str, Any]:
 
 @dataclass
 class AuditConfig:
-“”“⚙️ Konfiguration für das Audit-System”””
+"""⚙️ Konfiguration für das Audit-System"""
 
 ```
 # Speicher-Einstellungen
@@ -134,7 +134,7 @@ audit_level: str = "standard"            # minimal, standard, detailed
 # ==============================================================================
 
 class INTEGRAMiniAudit:
-“””
+"""
 📋 Comprehensive Audit-System für INTEGRA Light
 
 ```
@@ -516,7 +516,7 @@ input_data: Dict[str, Any],
 profile: Dict[str, Any],
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“””
+"""
 📋 Standard INTEGRA-Interface für Mini-Audit
 
 ```
@@ -570,7 +570,7 @@ align_score: float,
 violations: List[str] = None,
 response_time_ms: float = None
 ) -> AuditEntry:
-“””
+"""
 📝 Erstellt einfaches Audit-Log für Quick-Tests
 
 ```
@@ -599,7 +599,7 @@ return entry
 # ==============================================================================
 
 def run_unit_tests():
-“”“🧪 Umfassende Tests für Mini-Audit”””
+"""🧪 Umfassende Tests für Mini-Audit"""
 import tempfile
 import shutil
 
@@ -752,9 +752,9 @@ return tests_failed == 0
 # ==============================================================================
 
 def run_demo():
-“”“🎮 Demo des Mini-Audit Systems”””
-print(“🎮 INTEGRA Mini-Audit Demo”)
-print(”=” * 40)
+"""🎮 Demo des Mini-Audit Systems"""
+print("🎮 INTEGRA Mini-Audit Demo")
+print("=" * 40)
 
 ```
 # Setup mit temporärem Log-Directory

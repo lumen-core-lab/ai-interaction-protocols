@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 modules/governance/basic_control.py
 
 🛡️ BASIC CONTROL - Intelligente Governance für INTEGRA Light 🛡️
@@ -17,7 +17,7 @@ Implementiert umfassende menschliche Kontrolle über KI-Entscheidungen:
 Design-Philosophie: Menschen behalten IMMER die letzte Kontrolle
 
 Version: INTEGRA Light 1.0
-“””
+"""
 
 import re
 from typing import Dict, Any, List, Optional, Tuple
@@ -32,39 +32,39 @@ from enum import Enum
 # ==============================================================================
 
 class ControlAction(Enum):
-“”“🎛️ Verfügbare Kontroll-Aktionen”””
-OVERRIDE = “override”               # Benutzer übersteuert Entscheidung
-APPROVE = “approve”                 # Benutzer genehmigt Vorschlag
-REJECT = “reject”                   # Benutzer lehnt ab
-ESCALATE = “escalate”               # An höhere Instanz weiterleiten
-EMERGENCY_STOP = “emergency_stop”   # Sofortiger System-Stopp
-REQUEST_EXPLANATION = “explain”     # Erklärung anfordern
-MODIFY_SETTINGS = “modify”          # Einstellungen ändern
+"""🎛️ Verfügbare Kontroll-Aktionen"""
+OVERRIDE = "override"               # Benutzer übersteuert Entscheidung
+APPROVE = "approve"                 # Benutzer genehmigt Vorschlag
+REJECT = "reject"                   # Benutzer lehnt ab
+ESCALATE = "escalate"               # An höhere Instanz weiterleiten
+EMERGENCY_STOP = "emergency_stop"   # Sofortiger System-Stopp
+REQUEST_EXPLANATION = "explain"     # Erklärung anfordern
+MODIFY_SETTINGS = "modify"          # Einstellungen ändern
 
 class TrustLevel(Enum):
-“”“🤝 Vertrauens-Level für adaptive Kontrolle”””
-UNTRUSTED = “untrusted”     # Neue/unbekannte Nutzer
-LOW = “low”                 # Wenig Vertrauen
-NORMAL = “normal”           # Standard-Vertrauen
-HIGH = “high”               # Hohes Vertrauen
-TRUSTED = “trusted”         # Vollständig vertraut
+"""🤝 Vertrauens-Level für adaptive Kontrolle"""
+UNTRUSTED = "untrusted"     # Neue/unbekannte Nutzer
+LOW = "low"                 # Wenig Vertrauen
+NORMAL = "normal"           # Standard-Vertrauen
+HIGH = "high"               # Hohes Vertrauen
+TRUSTED = "trusted"         # Vollständig vertraut
 
 @dataclass
 class ControlEvent:
-“”“📝 Einzelnes Governance-Ereignis”””
+"""📝 Einzelnes Governance-Ereignis"""
 timestamp: str = field(default_factory=lambda: datetime.now().isoformat())
 action: ControlAction = ControlAction.APPROVE
-user_id: str = “anonymous”
-original_decision: str = “”
-override_text: str = “”
-justification: str = “”
+user_id: str = "anonymous"
+original_decision: str = ""
+override_text: str = ""
+justification: str = ""
 trust_level: TrustLevel = TrustLevel.NORMAL
 safety_validated: bool = False
 escalation_triggered: bool = False
 
 @dataclass
 class GovernanceConfig:
-“”“⚙️ Konfiguration für Governance-System”””
+"""⚙️ Konfiguration für Governance-System"""
 
 ```
 # Override-Sicherheit
@@ -95,7 +95,7 @@ provide_alternatives: bool = True           # Alternative Vorschläge machen
 # ==============================================================================
 
 class INTEGRABasicControl:
-“””
+"""
 🛡️ Intelligentes Governance-System für INTEGRA Light
 
 ```
@@ -603,7 +603,7 @@ input_data: Dict[str, Any],
 profile: Dict[str, Any],
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“””
+"""
 🛡️ Standard INTEGRA-Interface für Basic Control
 
 ```
@@ -644,10 +644,10 @@ return context
 
 def create_override_request(
 override_text: str,
-justification: str = “”,
-user_id: str = “anonymous”
+justification: str = "",
+user_id: str = "anonymous"
 ) -> Dict[str, Any]:
-“””
+"""
 🔄 Erstellt Override-Anfrage für einfache Nutzung
 
 ```
@@ -668,9 +668,9 @@ return {
 
 def create_escalation_request(
 reason: str,
-user_id: str = “anonymous”
+user_id: str = "anonymous"
 ) -> Dict[str, Any]:
-“””
+"""
 🚨 Erstellt Eskalations-Anfrage
 
 ```
@@ -695,8 +695,8 @@ return {
 # ==============================================================================
 
 def run_unit_tests():
-“”“🧪 Umfassende Tests für Basic Control”””
-print(“🧪 Starte Unit-Tests für modules/governance/basic_control.py…”)
+"""🧪 Umfassende Tests für Basic Control"""
+print("🧪 Starte Unit-Tests für modules/governance/basic_control.py…")
 
 ```
 tests_passed = 0
@@ -866,9 +866,9 @@ return tests_failed == 0
 # ==============================================================================
 
 def run_demo():
-“”“🎮 Demo des Basic Control Systems”””
-print(“🎮 INTEGRA Basic Control Demo”)
-print(”=” * 40)
+"""🎮 Demo des Basic Control Systems"""
+print("🎮 INTEGRA Basic Control Demo")
+print("=" * 40)
 
 ```
 # Setup

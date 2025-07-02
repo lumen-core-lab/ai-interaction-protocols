@@ -2,7 +2,7 @@
 
 **Vereinheitlichtes Meta-Protokoll für ethische KI-Systeme**
 
-> „Ethik ist kein Modul. Sie ist das Betriebssystem.“ – Dominik Knape
+> „Ethik ist kein Modul. Sie ist das Betriebssystem." – Dominik Knape
 
 ---
 

@@ -1,6 +1,6 @@
 # # -*- coding: utf-8 -*-
 
-“””
+"""
 modules/learning/mini_learner.py
 
 🧠 MINI LEARNER - Intelligentes Feedback-Lernen für INTEGRA Light 🧠
@@ -16,7 +16,7 @@ Implementiert adaptives Lernen basierend auf Nutzer-Feedback:
 Design-Philosophie: Vorsichtiges, graduelle Lernen das ethische Grundwerte schützt
 
 Version: INTEGRA Light 1.0
-“””
+"""
 
 import json
 from typing import Dict, Any, List, Optional, Tuple
@@ -31,7 +31,7 @@ from dataclasses import dataclass, field
 
 @dataclass
 class LearningConfig:
-“”“📋 Konfiguration für das Mini-Lernen”””
+"""📋 Konfiguration für das Mini-Lernen"""
 
 ```
 # Basis-Lernraten für verschiedene Feedback-Typen
@@ -58,7 +58,7 @@ implicit_feedback_weight: float = 0.2   # Automatische Analyse
 
 @dataclass
 class LearningEvent:
-“”“📝 Einzelnes Lern-Ereignis für Tracking”””
+"""📝 Einzelnes Lern-Ereignis für Tracking"""
 timestamp: str
 feedback_type: str              # ‘positive’, ‘negative’, ‘implicit’
 principle_affected: str
@@ -74,7 +74,7 @@ context: Dict[str, Any] = field(default_factory=dict)
 # ==============================================================================
 
 class INTEGRAMiniLearner:
-“””
+"""
 🧠 Intelligenter Mini-Learner für INTEGRA Light
 
 ```
@@ -450,7 +450,7 @@ input_data: Dict[str, Any],
 profile: Dict[str, Any],
 context: Dict[str, Any]
 ) -> Dict[str, Any]:
-“””
+"""
 🧠 Standard INTEGRA-Interface für Mini-Learner
 
 ```
@@ -517,7 +517,7 @@ principle: Optional[str] = None,
 profile: Optional[Dict[str, Any]] = None,
 context: Optional[Dict[str, Any]] = None
 ) -> Dict[str, Any]:
-“””
+"""
 👍 Einfache Feedback-Funktion für direkte Nutzung
 
 ```
@@ -559,8 +559,8 @@ return learner.process_feedback(
 # ==============================================================================
 
 def run_unit_tests():
-“”“🧪 Umfassende Tests für Mini-Learner”””
-print(“🧪 Starte Unit-Tests für modules/learning/mini_learner.py…”)
+"""🧪 Umfassende Tests für Mini-Learner"""
+print("🧪 Starte Unit-Tests für modules/learning/mini_learner.py…")
 
 ```
 tests_passed = 0
@@ -707,9 +707,9 @@ return tests_failed == 0
 # ==============================================================================
 
 def run_demo():
-“”“🎮 Demo des Mini-Learners”””
-print(“🎮 INTEGRA Mini-Learner Demo”)
-print(”=” * 40)
+"""🎮 Demo des Mini-Learners"""
+print("🎮 INTEGRA Mini-Learner Demo")
+print("=" * 40)
 
 ```
 # Setup
