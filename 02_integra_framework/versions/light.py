@@ -31,26 +31,26 @@ import json
 
 try:
 # Core Modules
-from ..core.align_principles import run_module as run_align_principles
-from ..core.decision_engine import run_module as run_decision_engine
-from ..core.profile_manager import run_module as run_profile_manager
+from core.align_principles import run_module as run_align_principles
+from core.decision_engine import run_module as run_decision_engine
+from core.profile_manager import run_module as run_profile_manager
 
 ```
 # Ethics Modules
-from ..modules.ethics.basic_ethics import run_module as run_basic_ethics
+from modules.ethics.basic_ethics import run_module as run_basic_ethics
 
 # Learning Modules 
-from ..modules.learning.mini_learner import run_module as run_mini_learner
+from modules.learning.mini_learner import run_module as run_mini_learner
 
 # Audit Modules
-from ..modules.audit.mini_audit import run_module as run_mini_audit
+from modules.audit.mini_audit import run_module as run_mini_audit
 
 # Governance Modules
-from ..modules.governance.basic_control import run_module as run_basic_control
+from modules.governance.basic_control import run_module as run_basic_control
 
 # Reasoning Modules
-from ..modules.reasoning.fast_path import run_module as run_fast_path
-from ..modules.reasoning.deep_path import run_module as run_deep_path
+from modules.reasoning.fast_path import run_module as run_fast_path
+from modules.reasoning.deep_path import run_module as run_deep_path
 ```
 
 except ImportError as e:

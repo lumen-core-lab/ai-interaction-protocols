@@ -32,8 +32,8 @@ import argparse
 
 # INTEGRA Light Import
 try:
-    from ..versions.light import INTEGRALight, create_integra_light, INTEGRALightConfig, SecurityLevel, ProcessingMode
-    from ..versions.light import quick_ethical_check
+    from versions.light import INTEGRALight, create_integra_light, INTEGRALightConfig, SecurityLevel, ProcessingMode
+    from versions.light import quick_ethical_check
 except ImportError:
     print("⚠️ INTEGRA Light nicht gefunden. Standalone-Modus aktiv.")
     # Mock für Standalone-Demo
