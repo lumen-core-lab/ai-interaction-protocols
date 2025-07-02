@@ -115,7 +115,7 @@ context.update({
 })
 
 return context
-```
+
 
 # ==============================================================================
 
@@ -130,7 +130,7 @@ return context
     """
     Analysiert Eingabedaten auf ALIGN-Konformität.
 
-    ```
+    
     Diese Funktion implementiert die eigentliche Ethik-Logik für INTEGRA Light.
     Sie ist bewusst einfach gehalten aber erweiterbar für komplexere Versionen.
 
