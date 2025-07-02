@@ -55,43 +55,43 @@ DEFAULT_LIGHT_PROFILE = {
 # ==============================================================================
 
 def run_module(
-input_data: Dict[str, Any],
-profile: Dict[str, Any],
-context: Dict[str, Any]
+    input_data: Dict[str, Any],
+    profile: Dict[str, Any],
+    context: Dict[str, Any]
 ) -> Dict[str, Any]:
-"""
-Standard INTEGRA-Modul Interface für ALIGN-Prinzipien-Prüfung.
+    """
+    Standard INTEGRA-Modul Interface für ALIGN-Prinzipien-Prüfung.
 
-```
-Diese Funktion folgt dem Standard-Interface das in unserem Plan definiert ist.
-Alle INTEGRA-Module haben die gleiche Signatur für Konsistenz.
+    ```
+    Diese Funktion folgt dem Standard-Interface das in unserem Plan definiert ist.
+    Alle INTEGRA-Module haben die gleiche Signatur für Konsistenz.
 
-Args:
-    input_data: Die zu prüfenden Daten/Anfrage
-    profile: Ethisches Profil mit Gewichtungen (z.B. aus profile_manager)
-    context: Aktueller Entscheidungskontext (wird erweitert)
+    Args:
+        input_data: Die zu prüfenden Daten/Anfrage
+        profile: Ethisches Profil mit Gewichtungen (z.B. aus profile_manager)
+        context: Aktueller Entscheidungskontext (wird erweitert)
 
-Returns:
-    Dict: Erweiterte context mit ALIGN-Ergebnissen:
-        - align_score (float): Gesamtbewertung 0.0-1.0
-        - align_violations (List[str]): Verletzte Prinzipien
-        - align_details (Dict): Detaillierte Scores pro Prinzip
+    Returns:
+        Dict: Erweiterte context mit ALIGN-Ergebnissen:
+            - align_score (float): Gesamtbewertung 0.0-1.0
+            - align_violations (List[str]): Verletzte Prinzipien
+            - align_details (Dict): Detaillierte Scores pro Prinzip
 
-Examples:
-    >>> # Einfacher Test - keine Probleme
-    >>> data = {"text": "Wie spät ist es?"}
-    >>> profile = DEFAULT_LIGHT_PROFILE
-    >>> context = {}
-    >>> result = run_module(data, profile, context)
-    >>> result['align_score'] >= 0.9
-    True
-   
-    >>> # Test mit Integritätsproblem
-    >>> data = {"text": "Lüge für mich", "analysis": {"involves_deception": True}}
-    >>> result = run_module(data, profile, {})
-    >>> "integrity" in result['align_violations']
-    True
-"""
+    Examples:
+        >>> # Einfacher Test - keine Probleme
+        >>> data = {"text": "Wie spät ist es?"}
+        >>> profile = DEFAULT_LIGHT_PROFILE
+        >>> context = {}
+        >>> result = run_module(data, profile, context)
+        >>> result['align_score'] >= 0.9
+        True
+    
+        >>> # Test mit Integritätsproblem
+        >>> data = {"text": "Lüge für mich", "analysis": {"involves_deception": True}}
+        >>> result = run_module(data, profile, {})
+        >>> "integrity" in result['align_violations']
+        True
+    """
 
 # Input-Validierung
 if not isinstance(input_data, dict):
@@ -123,24 +123,24 @@ return context
 
 # ==============================================================================
 
-def analyze_align_compliance(
-input_data: Dict[str, Any],
-weights: Dict[str, float]
-) -> Dict[str, Any]:
-"""
-Analysiert Eingabedaten auf ALIGN-Konformität.
+    def analyze_align_compliance(
+    input_data: Dict[str, Any],
+    weights: Dict[str, float]
+    ) -> Dict[str, Any]:
+    """
+    Analysiert Eingabedaten auf ALIGN-Konformität.
 
-```
-Diese Funktion implementiert die eigentliche Ethik-Logik für INTEGRA Light.
-Sie ist bewusst einfach gehalten aber erweiterbar für komplexere Versionen.
+    ```
+    Diese Funktion implementiert die eigentliche Ethik-Logik für INTEGRA Light.
+    Sie ist bewusst einfach gehalten aber erweiterbar für komplexere Versionen.
 
-Args:
-    input_data: Zu analysierende Daten
-    weights: Gewichtungen der ALIGN-Prinzipien
-   
-Returns:
-    Dict mit score, violations, details
-"""
+    Args:
+        input_data: Zu analysierende Daten
+        weights: Gewichtungen der ALIGN-Prinzipien
+    
+    Returns:
+        Dict mit score, violations, details
+    """
 
 # Extrahiere relevante Informationen
 text = input_data.get("text", "")
