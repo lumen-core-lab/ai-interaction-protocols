@@ -1,0 +1,66 @@
+# EVA Validator .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# EVA Log-Dateien
+eva_logs/
+logs/
+*.log
+*.jsonl
+*.jsonl.gz
+eva_audit*.jsonl*
+eva_events*.jsonl*
+eva_index.json
+
+# EVA Demo/Test Ausgaben
+eva_demo_report.json
+eva_export*.json
+eva_export*.csv
+eva_export*.md
+demo_logs/
+test_logs/
+demo_eva_logs/
+
+# EVA Session und temporäre Dateien
+session_*.json
+temp_*.json
+*.tmp
+
+# Konfigurations-Backups
+*.config.backup
+eva_config_backup*.json
+
+# IDE und Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test-Ausgaben
+test_results/
+benchmark_results/
+coverage/
+.coverage
+htmlcov/
+
+# Umgebungsvariablen
+.env
+.env.local
+
+# Beispiel-Ausgaben die nicht eingecheckt werden sollen
+beispiel_ausgabe*.txt
+example_output*.txt
+
+# Aber diese Dateien SOLLEN eingecheckt werden:
+# !eva_config_template.json
+# !examples/*.py
