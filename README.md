@@ -16,7 +16,7 @@ Version 4.2 des INTEGRA-Protokolls – dessen Implementierung Sie hier finden �
 
 ---
 
-## ✨ Das Herzstück: Unabhängige Ethik-Validierung mit EVA
+## ✨ Unabhängige Ethik-Validierung mit EVA
 
 Das INTEGRA Framework wird durch **EVA (Ethical Validation & Audit Layer)** ergänzt – ein separates, aber integraler Bestandteil des Ökosystems. EVA ist die unabhängige Prüfinstanz, die jede INTEGRA-Entscheidung umfassend validiert, bevor sie ausgeführt wird.
 
