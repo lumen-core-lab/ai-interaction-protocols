@@ -247,9 +247,6 @@ Dieses Repository nutzt zwei Lizenzen. Bitte prüfen Sie, welchen Teil Sie verwe
     * **Bedingungen:** Nahezu uneingeschränkte Nutzung, auch kommerziell.
     * **Details:** Die vollständigen Bedingungen finden Sie in der `LICENSE-MIT.md`-Datei innerhalb des `/archiv`-Ordners.
 
----
-<<<<<<< HEAD
-© 2025 Dominik Knape
 =======
 © 2025 Dominik Knape
 >>>>>>> 44df3e2986f339302ebc2a03ac2a11817233d2d3
