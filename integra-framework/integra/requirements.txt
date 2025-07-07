@@ -1,0 +1,3 @@
+# INTEGRA nutzt nur Python Standard-Bibliotheken
+# Keine externen Dependencies erforderlich!
+# Python 3.8+ wird benötigt
