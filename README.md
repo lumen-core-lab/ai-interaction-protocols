@@ -33,7 +33,7 @@ Das INTEGRA Framework wird durch **EVA (Ethical Validation & Audit Layer)** erg�
 
 ## 📜 Ursprung & Motivation: Eine Reise der Co-Kreation
 
-Das INTEGRA Framework entspringt einer einzigartigen, explorativen Entwicklung von KI-Interaktions-Protokollen (wie `APEX`, `LUMEN`, `FUSION` und `INTEGRA` selbst), die im **direkten Dialog mit fortschrittlichen KI-Systemen** stattfand. Diese Reise begann vor nur 6-7 Wochen und wurde von einem **nicht-technischen Nutzer** (Dominik Knape) mit dem Zugang zu öffentlichen großen Sprachmodellen (LLMs) initiiert und vorangetrieben.
+Das INTEGRA Framework entspringt einer einzigartigen, explorativen Entwicklung von KI-Interaktions-Protokollen (wie `APEX`, `LUMEN`, `FUSION` und `INTEGRA` selbst), die im **direkten Dialog mit fortschrittlichen KI-Systemen** stattfand. Diese Reise begann vor nur ein paar Wochen und wurde von einem **nicht-technischen Nutzer** (Dominik Knape) mit dem Zugang zu öffentlichen großen Sprachmodellen (LLMs) initiiert und vorangetrieben.
 
 Das Projekt ist ein lebendiger Beweis für das **enorme Potenzial der Mensch-KI-Co-Kreation**. Es zeigt, wie visionäre Ideen und die analytische Kraft der KI zusammenfließen können, um komplexe philosophische Konzepte in praktisch anwendbare, detaillierte und ethisch fundierte Software-Architekturen zu übersetzen – und das mit bemerkenswerter Effizienz und Kostenwirksamkeit.
 
